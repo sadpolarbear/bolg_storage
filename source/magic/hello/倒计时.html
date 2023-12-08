@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大考</title>   <!--修改网页页面标题-->
+        <style>
+          
+   body {
+        background: skyblue;   <!--修改网页背景颜色-->
+      }
+            input {
+                width: 30px;
+                height: 15px;
+            }
+            #remainTime{
+                background-color: skyblue; <!--修改文字背景颜色及文字框大小-->
+                margin-top: 30px;
+                font-size: 30px;
+                text-align: center;  <!--居中-->
+
+            }
+            #remainTime span {
+                color: pink;   <!---->
+                font-weight: bold;
+                margin-right: 10px;
+            }
+        </style>
+</head>
+<body>
+    <div id="remainTime">
+        一直走下去还有： <!--修改倒计时主题-->
+        <span id="one"></span>天
+        <span id="two"></span>时
+        <span id="three"></span>分
+        <span id="four"></span>秒
+    </div>
+</body>
+<script>
+        (function show() {      
+            var oYear = 2024 <!--修改倒计时目标时间年月日时分秒-->
+            var oMonth = 12
+            var oDay = 29
+            var oHour = 0
+            var oMinute = 0
+            var oSecond = 0
+            var funtureDate = new Date(oYear, oMonth, oDay, oHour, oMinute, oSecond);
+            setInterval(function () {
+                var presentDate = new Date(); <!--获取最新时间-->
+                var funtureTime = funtureDate.getTime(); <!--获取时间戳-->
+                var presenTime = presentDate.getTime();
+                var allTime = funtureTime - presenTime;          
+                var allSecond = parseInt(allTime / 1000);
+                var day = size(parseInt(allSecond / 3600 / 24));
+                var hour = size(parseInt(allSecond / 3600 % 24));
+                var minute = size(parseInt(allSecond / 60 % 60));
+                var second = size(parseInt(allSecond % 60));
+                document.getElementById('one').innerHTML = day;
+                document.getElementById('two').innerHTML = hour;
+                document.getElementById('three').innerHTML = minute;
+                document.getElementById('four').innerHTML = second;
+            }, 1000);
+            function size(num) {
+                return num < 10 & num >= 0 ? '0' + num : num;
+            }  
+        })()
+        
+        <!--格式化日期-->
+        
+        function dateFormat(data){
+            var date = new Date(data);
+            var YY = date.getFullYear() + '-';
+            var MM = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
+            var DD = (date.getDate() < 10 ? '0' + (date.getDate()) : date.getDate());
+            return YY + MM + DD;
+        }
+  </script>
+  <!--这里加了个图片，可以把链接放进去替换。也上面一行是居中格式-->
+  <p style="text-align: center;">
+  <img src="https://s2.loli.net/2022/06/29/aVKgiL6urvs45PE.gif" alt="图片">
+	</p>
+
+</html>

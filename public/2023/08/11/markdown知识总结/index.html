@@ -1,0 +1,482 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>markdown 知识总结 | 爱哭的北极熊</title><meta name="author" content="Bewildered Bear"><meta name="copyright" content="Bewildered Bear"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="1 打对号 或者 叉号  以及特殊符号 可以使用 HTML 实体来插入符号。例如，可以使用 ✔ 来插入一个对号，✖ 来插入一个叉号。  - 任务1 &amp;#x2714;- 任务2 &amp;#x2716;   任务1 &amp;#x2714;  任务2 &amp;#x2716;    使用-+空格+[空格]+空格  使用-+空额+[x]+空格         西瓜     	梅花 &amp;clubs; ​		黑桃">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown 知识总结">
+<meta property="og:url" content="https://sadpolarbear.github.io/2023/08/11/markdown%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="爱哭的北极熊">
+<meta property="og:description" content="1 打对号 或者 叉号  以及特殊符号 可以使用 HTML 实体来插入符号。例如，可以使用 ✔ 来插入一个对号，✖ 来插入一个叉号。  - 任务1 &amp;#x2714;- 任务2 &amp;#x2716;   任务1 &amp;#x2714;  任务2 &amp;#x2716;    使用-+空格+[空格]+空格  使用-+空额+[x]+空格         西瓜     	梅花 &amp;clubs; ​		黑桃">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://sadpolarbear.github.io/images/3.webp">
+<meta property="article:published_time" content="2023-08-10T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-12-08T03:10:09.640Z">
+<meta property="article:author" content="Bewildered Bear">
+<meta property="article:tag" content="知识">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://sadpolarbear.github.io/images/3.webp"><link rel="shortcut icon" href="/images/2.webp"><link rel="canonical" href="https://sadpolarbear.github.io/2023/08/11/markdown%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'markdown 知识总结',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-12-08 11:10:09'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/readPercent.css"><link rel="stylesheet" href="/css/ursine-umbra-cyrillic.css"><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/menu_ceter.css" /><link rel="stylesheet" href="/css/books.css" /><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/pace.js/pace.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/images/3.webp" onerror="onerror=null;src='/images/4.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 安乐窝</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 墨简</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-moon"></i><span> 月色真美</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/magic/"><i class="fa-fw fa fa-magic"></i><span> 魔法屋</span></a></li><li><a class="site-page child" href="/entertainment/"><i class="fa-fw fa fa-gamepad"></i><span> 游乐园</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-gift"></i><span> 风也温柔</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fa fa-camera-retro"></i><span> 影集</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fa fa-book"></i><span> 慢书屋</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-envelope"></i><span> 邮局</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 从这开始</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="爱哭的北极熊"><span class="site-name">爱哭的北极熊</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i></a></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 安乐窝</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 墨简</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-moon"></i><span> 月色真美</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/magic/"><i class="fa-fw fa fa-magic"></i><span> 魔法屋</span></a></li><li><a class="site-page child" href="/entertainment/"><i class="fa-fw fa fa-gamepad"></i><span> 游乐园</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-gift"></i><span> 风也温柔</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fa fa-camera-retro"></i><span> 影集</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fa fa-book"></i><span> 慢书屋</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-envelope"></i><span> 邮局</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 从这开始</span></a></div></div><div id="nav-right"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">markdown 知识总结</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-08-10T16:00:00.000Z" title="发表于 2023-08-11 00:00:00">2023-08-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-08T03:10:09.640Z" title="更新于 2023-12-08 11:10:09">2023-12-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/">知识总结</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/markdown/">markdown</a></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="1-打对号-或者-叉号-以及特殊符号"><a href="#1-打对号-或者-叉号-以及特殊符号" class="headerlink" title="1 打对号 或者 叉号  以及特殊符号"></a>1 打对号 或者 叉号  以及特殊符号</h1><ol>
+<li>可以使用 HTML 实体来插入符号。例如，可以使用<code> ✔</code> 来插入一个对号，<code>✖</code> 来插入一个叉号。</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- 任务1 &amp;#x2714;</span><br><span class="line">- 任务2 &amp;#x2716;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>任务1 &#x2714;</p>
+</li>
+<li><p>任务2 &#x2716;</p>
+</li>
+</ul>
+<ol start="2">
+<li><p>使用-+空格+[空格]+空格 </p>
+<p>使用-+空额+[x]+空格</p>
+</li>
+</ol>
+<ul>
+<li><p><input disabled="" type="checkbox"> </p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+西瓜</p>
+</li>
+</ul>
+<p>  	梅花 &clubs;</p>
+<p>​		黑桃 &spades;</p>
+<p>​			红心&hearts;</p>
+<p>​				方片&loz;</p>
+<p>​			五角星&#9956;</p>
+<p>​		雪人&#9731;</p>
+<p>[特殊符号网页大全]<a target="_blank" rel="noopener" href="https://symbl.cc/cn/unicode/blocks/miscellaneous-symbols/">https://symbl.cc/cn/unicode/blocks/miscellaneous-symbols/</a></p>
+<h1 id="2-字体大小"><a href="#2-字体大小" class="headerlink" title="2 字体大小"></a>2 字体大小</h1><p>照着这个代码书写，就能调节字体大小</p>
+<ol>
+<li><p><small>word</small></p>
+</li>
+<li><p><big>hello</big></p>
+</li>
+</ol>
+<h1 id="3-字体-颜色-大小-形式-的代码使用"><a href="#3-字体-颜色-大小-形式-的代码使用" class="headerlink" title="3 字体 颜色 大小  形式 的代码使用"></a>3 字体 颜色 大小  形式 的代码使用</h1><ol>
+<li><p>改变颜色(color)，这个颜色代码就是html颜色代码</p>
+<p>  <font color =blue>hello world</font></p>
+</li>
+</ol>
+<p>​	<font color=#008000>我是绿色</font></p>
+<ol start="2">
+<li>改变字体样式(face)</li>
+</ol>
+<p>​	<font face="微软雅黑">我是微软雅黑</font></p>
+<p><font face="STCAIYUN">	我是华文彩云</font></p>
+<ol start="3">
+<li>改变尺寸(size)</li>
+</ol>
+<p>​	<font size=5>尺寸5</font></p>
+<ol start="4">
+<li><p>一起使用</p>
+<p>例如 <font face="黑体" color=green size=5>我是黑体，绿色，尺寸为5</font></p>
+</li>
+<li><p>调节字体背景</p>
+</li>
+</ol>
+<p>​			<font style="background-color:green">绿色小标签</font></p>
+<ol start="6">
+<li><p>全部一起使用</p>
+<p><font style="background-color:#00FFFF" font face="黑体" color=green size=5>我是黑体，绿色，尺寸为5</font></p>
+</li>
+</ol>
+<p><code>注意 颜色既可以用英语单词,也可以用html代码</code></p>
+<h1 id="4-一般书写格式"><a href="#4-一般书写格式" class="headerlink" title="4 一般书写格式"></a>4 一般书写格式</h1><ol>
+<li><p><em>hello</em> 斜体</p>
+</li>
+<li><p><strong>world</strong> 粗体</p>
+</li>
+<li><p><code>hello world</code> 标记</p>
+<p><kbd>hello</kbd> 或者可以通过转义字符代码来获得</p>
+</li>
+<li><p>&#x3D;&#x3D;fighting&#x3D;&#x3D; 高亮</p>
+</li>
+<li><p><em><strong>hello world</strong></em> 粗斜体</p>
+</li>
+<li><p><u>hello</u> 下划线</p>
+</li>
+<li><hr>
+<p>分界线 自己ctrl + &#x2F; 看代码</p>
+</li>
+<li><p><del>hello</del> 删除线</p>
+</li>
+<li><blockquote>
+<p>引用 </p>
+<blockquote>
+<p>多级引用</p>
+</blockquote>
+</blockquote>
+</li>
+<li><p>链接 <a target="_blank" rel="noopener" href="https://markdown.com.cn/">https://markdown.com.cn</a></p>
+<p>或者 可以<a target="_blank" rel="noopener" href="https://markdown.com.cn/">链接</a></p>
+<p>只要按住ctrl键，再点击以下链接，就可以直接网页跳转。</p>
+</li>
+<li><ul>
+<li><p>靠tab enter(退出某级,直接回到正文)  shift+tab backspace(回到上一级) 一起来调节级数 </p>
+<ul>
+<li>多级<ul>
+<li>列表</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>hello</li>
+<li>world</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>^hello^ 上标</p>
+</li>
+<li><p><del>hello</del> 下标</p>
+</li>
+<li></li>
+<li><!-- 这是 html 注释， 在 markdown 中也不会被编译， 可以作为注释的方法 --> 注释
+
+<!--hello--></li>
+</ol>
+<h1 id="5-特殊符号的快捷键"><a href="#5-特殊符号的快捷键" class="headerlink" title="5 特殊符号的快捷键"></a>5 特殊符号的快捷键</h1><ol>
+<li>在中文输入法状态下，可使用「Shift + 6」输入省略号。注意是 6 个点，而非 3 个点，如 ……</li>
+<li>在中文输入法状态下，可使用「Shift + -」输入破折号。注意该符号应占两个汉字宽度，如——</li>
+<li>在中文输入法状态下，可使用「Shift + &#96;（ESC 键下方）」输入波浪线。可用波浪线表示数值的区间，如~</li>
+</ol>
+<h1 id="6-图片的处理"><a href="#6-图片的处理" class="headerlink" title="6 图片的处理"></a>6 图片的处理</h1><h2 id="1-直接引用"><a href="#1-直接引用" class="headerlink" title="1 直接引用"></a>1 直接引用</h2><p><img src="https://pic2.zhimg.com/80/v2-f6b017b641e322028b68bf15ce54f299_1440w.webp" alt="picture"></p>
+<p>默认 直接从网络中获取 ，不考虑尺寸，位置的问题</p>
+<hr>
+<h2 id="2-添加注释和改变位置"><a href="#2-添加注释和改变位置" class="headerlink" title="2 添加注释和改变位置"></a>2 添加注释和改变位置</h2><div alt="fig">可以在此给图片添加注释</div><img align="left" src="https://pic2.zhimg.com/80/v2-f6b017b641e322028b68bf15ce54f299_1440w.webp"/><div alt="fig">也可以在下方添加注释</div>
+
+
+
+<p>调节了 位置 ，但是尺寸太大，所以没有多少区别 有三种 center right left</p>
+<div alt="fig">图释说明</div> 这个代表添加注释 放在链接图片之前的标签
+
+
+
+
+
+
+
+<hr>
+<h2 id="3-调节大小-位置和题注"><a href="#3-调节大小-位置和题注" class="headerlink" title="3 调节大小 位置和题注"></a>3 调节大小 位置和题注</h2><div alt="fig">图释说明,同时你也可以写写 
+你想写的东西</div><div align="right"><img width="350" height="250" src="https://pic2.zhimg.com/80/v2-f6b017b641e322028b68bf15ce54f299_1440w.webp"/></div><div alt="fig">题注</div>
+
+
+<p>图片调整了大小，和位置</p>
+<hr>
+<h1 id="7-内容折叠"><a href="#7-内容折叠" class="headerlink" title="7 内容折叠"></a>7 内容折叠</h1><details>
+<summary>展开查看</summary>
+<pre><code>你是谁;</code></pre>
+</details>
+
+
+
+
+<hr>
+<p>或者</p>
+<details>
+    <summary>折叠标签</summary>
+    <p>邮件地址标签 （<code>3080733673@qq.com</code>）：</p>
+    <iframe src="https://zhixingo.github.io/plays/pdfv/?url=https://files.catbox.moe/5iz1r9.pdf" height="400" frameborder="0" scrolling="no"></iframe>
+</details>
+
+
+
+
+<p>这里面的pdf文件是外链标签</p>
+<hr>
+<p>注意 </p>
+<p>其中<br>是换行 ,无法在他后面写东西</p>
+<details>
+<summary><b>See what's inside &darr;</b></summary>
+  <table border="1">
+    <tr>
+      <th>题目</th>
+    </tr>
+    <tr>
+      <td>
+        这个样子<br>
+        多行内容<br>
+        不至于让分不清哪里是折叠内容的结束<br>
+        链接<a href='url'>hello worlld</a><br>
+<table><tr><td bgcolor=yellow>自己的思考</td></tr></table>
+      </td>
+    </tr>
+  </table>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 id="8-锚点"><a href="#8-锚点" class="headerlink" title="8 锚点"></a>8 锚点</h1><p>使用方法ctrl+右键 且注意 id 必须使用英语 ，例如prefae 和text这种</p>
+<p>第一步：添加链接		<a href="#preface">前言</a><br>第二部：添加锚点		<a id="preface">前言</a></p>
+<p><a href="#test1">点我跳转到：测试1</a><br><a href="#end">点我跳转到：末位</a></p>
+<p><a id="test1">测试1</a></p>
+<h1 id="9-表格背景色"><a href="#9-表格背景色" class="headerlink" title="9 表格背景色"></a>9 表格背景色</h1><table><tr><td bgcolor=green>背景色green</td></tr></table>
+
+
+
+<h1 id="10-文字排版"><a href="#10-文字排版" class="headerlink" title="10 文字排版"></a>10 文字排版</h1><center>居中</center>
+<p align="left">左对齐</p>
+<p align="right">右对齐</p>
+
+
+
+
+
+<h1 id="11-gif插入"><a href="#11-gif插入" class="headerlink" title="11 gif插入"></a>11 gif插入</h1><p>插入gif图片</p>
+<p><img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" alt="Alt Text"></p>
+<p>或者可以调整其大小和调整其位置</p>
+<div align="middle"><img  src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="40" height="40" /></div>
+
+
+
+
+
+
+
+
+
+<p>以下是我用github图库所推送的gif图片，gif图片你可以上网下载，用pic来推送<br><img src="https://github.com/sadpolarbear/picture/raw/main/blogImg/202309171022991.gif" alt="Alt Text"></p>
+<p>这是居中模式下的gif图片，因为不好判断图片尺寸，所以只要知道这个middle right 和left 就行<img align="right" src="https://github.com/sadpolarbear/picture/raw/main/blogImg/202309171022991.gif"/></p>
+<p>通过调节位置，就可以达到这种侧边书写的逻辑。</p>
+<h1 id="12-音乐插入"><a href="#12-音乐插入" class="headerlink" title="12 音乐插入"></a>12 音乐插入</h1><audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://github.com/sadpolarbear/picture/raw/main/blogImg/202309171040315.mp3">
+</audio>
+
+
+
+<p>这是通过用pic导入视频，推送到github仓库中，然后用html 语句来导入</p>
+<p>直接通过网易云中的生成外链播放器<a href="%E8%84%9A%E6%B3%A8%E7%94%A8%5B%5E%E6%95%B0%E5%AD%97%5D%E6%9D%A5%E5%AE%9A%E4%B9%89,%E4%B9%8B%E5%90%8E%E7%82%B9%E5%87%BB%E8%B7%B3%E8%BD%AC,%E4%BD%A0%E6%9D%A5%E4%B9%A6%E5%86%99%E7%A1%AE%E8%AE%A4">^2</a></p>
+<p>，iframe模块</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=16435049&auto=1&height=66"></iframe>
+
+
+
+<h1 id="13-表格"><a href="#13-表格" class="headerlink" title="13 表格"></a>13 表格</h1><p>直接就是插入默认 就可以了 <a href="%E8%BF%99%E6%98%AF%E8%84%9A%E6%B3%A8%E8%B7%B3%E8%BD%AC%E7%9A%84%E9%93%BE%E6%8E%A5,%E8%AE%B0%E4%BD%8F%E7%94%A8ctrl%E5%8A%A0%E4%B8%8A%E5%8F%B3%E5%87%BB">^1</a></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="14-脚注与文末链接"><a href="#14-脚注与文末链接" class="headerlink" title="14 脚注与文末链接"></a>14 脚注与文末链接</h1><p><a id="end">末尾</a></p>
+<p>[3]: <a target="_blank" rel="noopener" href="https://www.zhihu.com/question/316039999">https://www.zhihu.com/question/316039999</a>	“参考文献,我这里懒的去找,所以直接就引用了一个壁纸网站”</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://sadpolarbear.github.io">Bewildered Bear</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://sadpolarbear.github.io/2023/08/11/markdown%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/">https://sadpolarbear.github.io/2023/08/11/markdown知识总结/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://sadpolarbear.github.io" target="_blank">爱哭的北极熊</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%9F%A5%E8%AF%86/">知识</a></div><div class="post_share"><div class="social-share" data-image="/images/3.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/08/11/%E7%94%9F%E6%B4%BB%E5%85%B6%E5%AE%9E%E5%BE%88%E7%BE%8E%E5%A5%BD/" title="生活其实很美好"><img class="cover" src="/medias/11.webp" onerror="onerror=null;src='/null'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">生活其实很美好</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/07/19/%E5%AE%89%E5%85%A8%E7%94%A8%E7%94%B5/" title="安全用电"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-19</div><div class="title">安全用电</div></div></a></div><div><a href="/2023/07/19/%E6%8E%A7%E5%88%B6%E7%84%A6%E8%99%91/" title="控制焦虑的方法"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-19</div><div class="title">控制焦虑的方法</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/images/3.webp" onerror="this.onerror=null;this.src='/images/4.gif'" alt="avatar"/></div><div class="author-info__name">Bewildered Bear</div><div class="author-info__description">盐于律己、甜以待人</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/sadpolarbear"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/sadpolarbear" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:gayternqsdhv@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E6%89%93%E5%AF%B9%E5%8F%B7-%E6%88%96%E8%80%85-%E5%8F%89%E5%8F%B7-%E4%BB%A5%E5%8F%8A%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7"><span class="toc-number">1.</span> <span class="toc-text">1 打对号 或者 叉号  以及特殊符号</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F"><span class="toc-number">2.</span> <span class="toc-text">2 字体大小</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E5%AD%97%E4%BD%93-%E9%A2%9C%E8%89%B2-%E5%A4%A7%E5%B0%8F-%E5%BD%A2%E5%BC%8F-%E7%9A%84%E4%BB%A3%E7%A0%81%E4%BD%BF%E7%94%A8"><span class="toc-number">3.</span> <span class="toc-text">3 字体 颜色 大小  形式 的代码使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-%E4%B8%80%E8%88%AC%E4%B9%A6%E5%86%99%E6%A0%BC%E5%BC%8F"><span class="toc-number">4.</span> <span class="toc-text">4 一般书写格式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-number">5.</span> <span class="toc-text">5 特殊符号的快捷键</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-%E5%9B%BE%E7%89%87%E7%9A%84%E5%A4%84%E7%90%86"><span class="toc-number">6.</span> <span class="toc-text">6 图片的处理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%9B%B4%E6%8E%A5%E5%BC%95%E7%94%A8"><span class="toc-number">6.1.</span> <span class="toc-text">1 直接引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%B7%BB%E5%8A%A0%E6%B3%A8%E9%87%8A%E5%92%8C%E6%94%B9%E5%8F%98%E4%BD%8D%E7%BD%AE"><span class="toc-number">6.2.</span> <span class="toc-text">2 添加注释和改变位置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E8%B0%83%E8%8A%82%E5%A4%A7%E5%B0%8F-%E4%BD%8D%E7%BD%AE%E5%92%8C%E9%A2%98%E6%B3%A8"><span class="toc-number">6.3.</span> <span class="toc-text">3 调节大小 位置和题注</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#7-%E5%86%85%E5%AE%B9%E6%8A%98%E5%8F%A0"><span class="toc-number">7.</span> <span class="toc-text">7 内容折叠</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#8-%E9%94%9A%E7%82%B9"><span class="toc-number">8.</span> <span class="toc-text">8 锚点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#9-%E8%A1%A8%E6%A0%BC%E8%83%8C%E6%99%AF%E8%89%B2"><span class="toc-number">9.</span> <span class="toc-text">9 表格背景色</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#10-%E6%96%87%E5%AD%97%E6%8E%92%E7%89%88"><span class="toc-number">10.</span> <span class="toc-text">10 文字排版</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#11-gif%E6%8F%92%E5%85%A5"><span class="toc-number">11.</span> <span class="toc-text">11 gif插入</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#12-%E9%9F%B3%E4%B9%90%E6%8F%92%E5%85%A5"><span class="toc-number">12.</span> <span class="toc-text">12 音乐插入</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#13-%E8%A1%A8%E6%A0%BC"><span class="toc-number">13.</span> <span class="toc-text">13 表格</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#14-%E8%84%9A%E6%B3%A8%E4%B8%8E%E6%96%87%E6%9C%AB%E9%93%BE%E6%8E%A5"><span class="toc-number">14.</span> <span class="toc-text">14 脚注与文末链接</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Bewildered Bear</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://butterfly.js.org/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"></div><script async src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script><script defer src="/js/light.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '1s');
+    arr[i].setAttribute('data-wow-offset', '100');
+    arr[i].setAttribute('data-wow-iteration', '2');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><!-- hexo injector body_end end --></body></html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>爱哭的北极熊 - 温暖的熊屋</title><meta name="author" content="Bewildered Bear"><meta name="copyright" content="Bewildered Bear"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="Warm hugs">
+<meta property="og:type" content="website">
+<meta property="og:title" content="爱哭的北极熊">
+<meta property="og:url" content="https://sadpolarbear.github.io/index.html">
+<meta property="og:site_name" content="爱哭的北极熊">
+<meta property="og:description" content="Warm hugs">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://sadpolarbear.github.io/images/3.webp">
+<meta property="article:author" content="Bewildered Bear">
+<meta property="article:tag" content="blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://sadpolarbear.github.io/images/3.webp"><link rel="shortcut icon" href="/images/2.webp"><link rel="canonical" href="https://sadpolarbear.github.io/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '爱哭的北极熊',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-12-08 18:23:13'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/readPercent.css"><link rel="stylesheet" href="/css/ursine-umbra-cyrillic.css"><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/menu_ceter.css" /><link rel="stylesheet" href="/css/books.css" /><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/pace.js/pace.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/images/3.webp" onerror="onerror=null;src='/images/4.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 安乐窝</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 墨简</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-moon"></i><span> 月色真美</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/magic/"><i class="fa-fw fa fa-magic"></i><span> 魔法屋</span></a></li><li><a class="site-page child" href="/entertainment/"><i class="fa-fw fa fa-gamepad"></i><span> 游乐园</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-gift"></i><span> 风也温柔</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fa fa-camera-retro"></i><span> 影集</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fa fa-book"></i><span> 慢书屋</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-envelope"></i><span> 邮局</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 从这开始</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="爱哭的北极熊"><span class="site-name">爱哭的北极熊</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i></a></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 安乐窝</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 墨简</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-moon"></i><span> 月色真美</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/magic/"><i class="fa-fw fa fa-magic"></i><span> 魔法屋</span></a></li><li><a class="site-page child" href="/entertainment/"><i class="fa-fw fa fa-gamepad"></i><span> 游乐园</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-gift"></i><span> 风也温柔</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fa fa-camera-retro"></i><span> 影集</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fa fa-book"></i><span> 慢书屋</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-envelope"></i><span> 邮局</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 从这开始</span></a></div></div><div id="nav-right"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">爱哭的北极熊</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/sadpolarbear" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:gayternqsdhv@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/11/markdown%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" title="markdown 知识总结">markdown 知识总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-10T16:00:00.000Z" title="发表于 2023-08-11 00:00:00">2023-08-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/">知识总结</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/markdown/">markdown</a></span></div><div class="content">1 打对号 或者 叉号  以及特殊符号
+可以使用 HTML 实体来插入符号。例如，可以使用 ✔ 来插入一个对号，✖ 来插入一个叉号。
+
+- 任务1 &amp;#x2714;- 任务2 &amp;#x2716;
+
+
+任务1 &#x2714;
+
+任务2 &#x2716;
+
+
+
+使用-+空格+[空格]+空格 
+使用-+空额+[x]+空格
+
+
+
+ 
+
+ 
+西瓜
+
+
+  	梅花 &clubs;
+​		黑桃 &spades;
+​			红心&hearts;
+​				方片&loz;
+​			五角星&#9956;
+​		雪人&#9731;
+[特殊符号网页大全]https://symbl.cc/cn/unicode/blocks/miscellaneous-symbols/
+2 字体大小照着这个代码书写，就能调节字体大小
+
+word
+
+hello
+
+
+3 字体 颜色 大小  形式 的代码使用
+改变颜色(color)，这个颜色代码就是html颜色代码
+  hello world
+
+
+​	我是绿色
+
+改变字体样式(face)
+
+​	我是微软雅黑
+	我是华文彩云
+
+改变尺寸(size)
+
+​	尺寸5
+
+一起使 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/08/11/%E7%94%9F%E6%B4%BB%E5%85%B6%E5%AE%9E%E5%BE%88%E7%BE%8E%E5%A5%BD/" title="生活其实很美好"><img class="post-bg" src="/medias/11.webp" onerror="this.onerror=null;this.src='/null'" alt="生活其实很美好"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/08/11/%E7%94%9F%E6%B4%BB%E5%85%B6%E5%AE%9E%E5%BE%88%E7%BE%8E%E5%A5%BD/" title="生活其实很美好">生活其实很美好</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-10T16:00:00.000Z" title="发表于 2023-08-11 00:00:00">2023-08-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A/">心得体会</a></span></div><div class="content">生活其实很美好​    其实在国家和世界的角度来看，发展这一个概念压根和个体认识不同。对于国家来说，如何提高出口，消费，投资，如何更加可持续，更加安全等是国家的首要目标，正是这样，个体压根不考虑这么多，于是就会在现在的社会，感到如此的难受和奇怪。
+​    现在的社会运转，其实就像蛇咬着尾巴一样，构成一个循环，在这个正循环下，经济都在越来越快的增长。每个人拼了命的去完成kpi，然后去获得财富，去购买，去享受，然后继续提高国家的消费，每个人都像螺丝钉一样，不断为国家这艘巨轮去航行。可以说，如果你不理解，或者更确切的说，在自己的角度上去理解，为什么那些大佬去设立这个规则，你一定会感到痛苦，于是，只能为了卷而卷，在生活中感受不到快乐，为公司拼尽一切，带着疲惫的身躯回到家，一边吃饭，一边看这手机，在简单的段子中，去安慰治愈自己。不断给自己一个希望，等熬过这几天，就有钱了，就可以出去玩了，买自己最想要的物品，就可以实现自己的梦想，完成自己的期许！其实这本身并没有任何问题。没必要自责，没必要难受，理解世界，接纳自己，感受科技，放松自己，在原神里冒险，在电影院感动，在动漫里痴迷，其实每个人都是这么过 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/19/%E5%AE%89%E5%85%A8%E7%94%A8%E7%94%B5/" title="安全用电">安全用电</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-19T14:22:19.051Z" title="发表于 2023-07-19 22:22:19">2023-07-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/">知识总结</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/%E7%94%B5%E6%B0%94%E5%AE%89%E5%85%A8/">电气安全</a></span></div><div class="content">安全用电的重要性全世界每年死于电气事故的约占总和的百分之25；电气火灾约占火灾事故的总数的百分之14，从触电死亡事故分析：移动电具方面的触电死亡约占百分之51 ；违反安全操作规程，不懂安全操作而死亡的占百分之24.5 ；由于设备不良、检修不及时而造成触电死亡的占百分之24.5
+造成用电事故的原因
+安全用电管理漏洞
+电气工作人员技术水平低、责任性不强
+非电气人员或其他用电人员缺乏电气安全常识
+假冒伪劣产品导致触电事故的发生
+意外原因或者偶然因素
+
+触电人碰到带点导体而使电流通过人体的现象叫做触电。
+触电对人体的损伤情况触电种类包括电击和电伤两种伤害形式电击 ：电流通过人体时候，使得内部组织受到较为严重的损伤，电击电流值：感知电流（平均男1.1ma，女0.7ma），摆脱电流（平均男16ma，女10.5ma），室颤电流（50ma左右，与持续时间有关）。人体阻抗：干燥时约为10003000ω，潮湿时约为500800ω。原因：因为电弧发电的电流本身作用所造成的对人体的伤害症状：全身发热，发麻，肌肉发生不由自主的抽搐，逐渐失去知觉，持续，心脏，呼吸机能和神经系统受伤，直到停止呼吸，心脏停止跳动。
+ ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/19/%E6%8E%A7%E5%88%B6%E7%84%A6%E8%99%91/" title="控制焦虑的方法">控制焦虑的方法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-19T10:38:46.000Z" title="发表于 2023-07-19 18:38:46">2023-07-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/">知识总结</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/%E5%BF%83%E7%90%86%E5%AD%A6/">心理学</a></span></div><div class="content">基础思想a：对象 b ：观点  c：情绪	 d：自辩	 e：辩论所得到的合理观点例如	对象： 我面试失败了
+  1. 我面试失败了，我一无是处，找不到好工作了 情绪：焦虑。
+  2. 我本来就不信话这份工作，正好没进入，总结失败经验，准备喜欢工作的面试 ，下次一定成功。  情绪：失望但不是过分沮丧。
+  3. 我本来想进入这家公司，但是失败了，会客观的告诉自己，我自己尽自己最大的努力了，但是可能有人比我更适合这份工作，我可以尝试别的机会 		情绪：失望但是积极的
+  4. 无所谓	情绪：无情绪波动
+
+开始自辩，为什么面试失败，我就一无是处呀，不合理的观点给省去，或者面试结果又能怎样，面试失败，难道不能洗盘子吗？只要能回答为什么和怎么样（结果），就说明是非极端观点，代表可以接受此焦虑。
+积极想像法想象让你焦虑的具体事情，同时想象你能很好的应付这件事，想象越具体，对焦虑的控制越强。
+成本收益分析在问题面前，迎难而上和逃避困难，那个更划算，然后在内心做个选择
+放松和转移注意力冥想和瑜伽 主要核心就是放松疗法首先想到一个有意义的词语，大海，和平…. 之后找个地方坐下来闭上眼睛，放松肌肉，慢慢的 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/16/%E5%8F%98%E4%B8%8E%E4%B8%8D%E5%8F%98-%E8%8B%B9%E6%9E%9C%E6%A0%91%E7%90%86%E8%AE%BA/" title="变与不变">变与不变</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-16T10:38:46.000Z" title="发表于 2023-07-16 18:38:46">2023-07-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A/">心得体会</a></span></div><div class="content">变与不变苹果树理论一切变化的事物都是以不变的事物之上发现出来的，更明确的说，现代科技是有基础理论衍生出来的，通俗的说，只有知道基础理论，才能理解现在的科技的优势。
+世界万物都有自己的分类，每一种职业的前百分之20获得了百分之80的资源，同时展现他们应有的能力。隔行如隔山，你想了解一份壁垒不高的职业，很轻松，但是想进入前百分之20，非常困难。在伟大的天才，也只是在某一方面，不可能样样都优秀，在互联网的大环境下，让你以为你可以，但是实际上你不可能做到。在现在的互联网上，你点开维基百科或者百度百科，通过你高中的知识，你可以轻松的了解这个职业所代表的是什么，但是你不花几年的努力，你压根无法接触这个职业的伟大。
+在这个浮躁的世界里，做好你自己，扎根于独属于自己的土壤，以扎实的基础不断去拓张，最后长成参天大树，以不变应万变，追求知识的深度，以累累果实回馈那些值得被爱的人！
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/15/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-15T08:50:47.870Z" title="发表于 2023-07-15 16:50:47">2023-07-15</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post$ hexo new &quot;My New Post&quot;
+
+More info: Writing
+Run server$ hexo server
+
+More info: Server
+Generate static files$ hexo generate
+
+More info: Generating
+Deploy to remote sites$ hexo deploy
+
+More info: Deployment
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/images/3.webp" onerror="this.onerror=null;this.src='/images/4.gif'" alt="avatar"/></div><div class="author-info__name">Bewildered Bear</div><div class="author-info__description">盐于律己、甜以待人</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/sadpolarbear"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/sadpolarbear" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:gayternqsdhv@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="sticky_layout"><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">6</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2022-03-05T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-12-08T10:23:13.863Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Bewildered Bear</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://butterfly.js.org/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, ))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  if (true) {
+    typedJSFn.init(["你只管努力，剩下的交给时间","努力把平凡的日子堆砌成伟大的人生","心若有所向往，何惧道阻且长","决定我们成为什么样人的，不是我们的能力，而是我们的选择","梦里能达到的地方，总有一天，脚步也能达到"])
+  } else {
+    document.getElementById("subtitle").textContent = "你只管努力，剩下的交给时间"
+  }
+}
+typedJSFn.run(subtitleType)</script></div><script async src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script><script defer src="/js/light.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '1s');
+    arr[i].setAttribute('data-wow-offset', '100');
+    arr[i].setAttribute('data-wow-iteration', '2');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><!-- hexo injector body_end end --></body></html>
